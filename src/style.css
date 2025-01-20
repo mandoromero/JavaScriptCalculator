@@ -18,17 +18,17 @@ body {
 }
 
 display-container {
-  width: 90%
+  width: 90%;
   padding: 10px;
   display: flex;
   flex-direction: column;
   gap: 5px;
- 
 }
 
-#display, #equation-display {
+#display,
+#equation-display {
   width: 95%;
-  
+
   text-align: right;
   border-radius: 0;
   background-color: #fffacd;
@@ -36,7 +36,7 @@ display-container {
 }
 
 #equation-display {
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
   height: 20px;
   font-size: 1em;
   color: #73c2fb;
@@ -87,7 +87,7 @@ button:hover {
 
 #clear {
   background: #f44336;
-  color: #fff
+  color: #fff;
 }
 #clear:hover {
   background: #f9a219a;
@@ -101,5 +101,3 @@ button:hover {
 #equals:hover {
   background: #45a049;
 }
-
-;

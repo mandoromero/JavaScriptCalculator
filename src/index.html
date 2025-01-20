@@ -3,42 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-    <link rel="shortcut icon" href="./4geeks.ico" />
+    <title>JavaScript calculator</title>
+    <link rel="styesheet" type="text/css" href="./style" />
+    <script src="app.js" defer></script>
   </head>
   <body>
     <div id="calculator">
       <div id="display-container">
-    <!--Top display for the equation-->
-        <input type="text" id="equation-display" class="display" value="0" readonly>
-    <!--Bottom display for the current input and result-->
-        <input type="text" id="display" value="0">  
-    </div>  <!--display-container-->
-    <div id="buttons-container">
-      <button id="clear" class="wide" onclick="clearDisplay()">AC</button>
-      <button id="divide" onclick="handleOperator('/')">/</button>
-      <button id="multiply" onclick="handleOperator('*')">X</button>
-      <button id="seven" onclick="handleNumber('7')">7</button>
-      <button id="eight" onclick="handleNumber('8')">8</button>
-      <button id="nine" onclick="handleNumber('9')">9</button>
-      <button id="subtract" onclick="handleOperator('-')">-</button>
-      <button id="four" onclick="handleNumber('4')">4</button>
-      <button id="five" onclick="handleNumber('5')">5</button>
-      <button id="six" onclick="handleNumber('6')">6</button>
-      <button id="one" onclick="handleNumber('1')">1</button>
-      <button id="two" onclick="handleNumber('2')">2</button>
-      <button id="three" onclick="handleNumber('3')">3</button>
-      <button id="equals" class="tall" onclick="calculateResult()">=</button>
-      <button id="zero" class="wide" onclick="handleNumber('0')">0</button>
-      <button id="add" onclick="handleOperator('+')">+</button>
-      <button id="decimal" onclick="handleDecimal()">.</button>
-  </div>  <!--buttons-->
-</div>  <!--calculator-->
+        <!--Top display for the equation-->
+        <input
+          type="text"
+          id="equation-display"
+          class="display"
+          value="0"
+          readonly
+        />
+        <!--Bottom display for the current input and result-->
+        <input type="text" id="display" value="0" />
+      </div>
+      <!--display-container-->
+      <div id="buttons-container">
+        <button id="clear" class="wide" onclick="clearDisplay()">AC</button>
+        <button id="divide" onclick="handleOperator('/')">/</button>
+        <button id="multiply" onclick="handleOperator('*')">X</button>
+        <button id="seven" onclick="handleNumber('7')">7</button>
+        <button id="eight" onclick="handleNumber('8')">8</button>
+        <button id="nine" onclick="handleNumber('9')">9</button>
+        <button id="subtract" onclick="handleOperator('-')">-</button>
+        <button id="four" onclick="handleNumber('4')">4</button>
+        <button id="five" onclick="handleNumber('5')">5</button>
+        <button id="six" onclick="handleNumber('6')">6</button>
+        <button id="one" onclick="handleNumber('1')">1</button>
+        <button id="two" onclick="handleNumber('2')">2</button>
+        <button id="three" onclick="handleNumber('3')">3</button>
+        <button id="equals" class="tall" onclick="calculateResult()">=</button>
+        <button id="zero" class="wide" onclick="handleNumber('0')">0</button>
+        <button id="add" onclick="handleOperator('+')">+</button>
+        <button id="decimal" onclick="handleDecimal()">.</button>
+      </div>
+      <!--buttons-->
+    </div>
+    <!--calculator-->
   </body>
 </html>

@@ -1,7 +1,7 @@
 import "./style.css";
 
 let currentInput = "0"; // The current number or operator being input
-let equation = "";      // The full equation displayed at the top
+let equation = ""; // The full equation displayed at the top
 let resultDisplayed = false; // Tracks if the result has been displayed
 
 function clearDisplay() {
@@ -78,6 +78,5 @@ function updateDisplays() {
   const equationDisplay = document.getElementById("equation-display");
 
   display.value = currentInput || "0"; // Show current input or 0
-  equationDisplay.value = equation;   // Show the full equation
+  equationDisplay.value = equation; // Show the full equation
 }
-
